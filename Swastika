@@ -1,0 +1,31 @@
+import java.util.*;
+class p5
+{
+    public static void main()
+    {
+        String arr[][]=new String[8][8];
+        int i,j;
+        for(i=0;i<=7;i++)
+        {
+            for(j=0;j<=7;j++)
+            arr[i][j]=" ";
+        }
+        for(i=0,j=0;i<=3;i++)
+        arr[i][j]="*";
+        for(i=0,j=4;j<=7;j++)
+        arr[i][j]="*";
+        for(i=3,j=0;j<=7;j++)
+        arr[i][j]="*";
+        for(i=0,j=3;i<=7;i++)
+        arr[i][j]="*";
+        for(i=7,j=0;j<=3;j++)
+        arr[i][j]="*";
+        for(i=4,j=7;i<=7;i++)
+        arr[i][j]="*";
+        for(i=0;i<=7;i++)
+        {
+            for(j=0;j<=7;j++)
+            System.out.print(arr[i][j]);
+            System.out.println();
+        }
+    }}
